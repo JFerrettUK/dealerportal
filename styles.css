@@ -21,13 +21,13 @@ body, html {
             display: grid;
             justify-items: center;
             align-items: center;
-            grid-template-rows: 130px 50px 50px 50px 50px 50px 50px 40px 50px 50px 50px;
+            grid-template-rows: 130px 50px 50px 50px 50px 50px 50px 40px 50px 50px 50px 50px;
         }
 
         .navCol {
             display: grid;
             align-items: center;
-            grid-template-rows: 130px 50px 50px 50px 50px 50px 50px 40px 50px 50px 50px;
+            grid-template-rows: 130px 50px 50px 50px 50px 50px 50px 40px 50px 50px 50px 50px;
         }
 
             #mainLogo {
@@ -44,6 +44,10 @@ body, html {
 
             .dashIcon {
                 height: 30px;
+            }
+
+            .dashIcon2 {
+                height: 40px;
             }
 
             h1 {
@@ -255,9 +259,6 @@ body, html {
                         margin-bottom: 10px;
                     }
 
-                .trending {
-                }
-
                     .trendingCard {
                         padding: 20px;
                         display: grid;
@@ -361,9 +362,6 @@ linebreakCont {
     justify-content: center;
 }
 
-li {
-
-}
 
 .textCont {
     min-width: 80px;

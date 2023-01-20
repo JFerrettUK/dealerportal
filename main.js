@@ -7,10 +7,3 @@ function loginWarning() {
 function video() {
   alert('Video download features are in development.');
 }
-
-window.onload = function () {
-  function what() {
-    document.getElementById('header_1').innerHTML = 'hi';
-  }
-  what();
-};
