@@ -22,7 +22,7 @@ body, html {
             display: grid;
             justify-items: center;
             align-items: center;
-            grid-template-rows: 130px 50px 50px 50px 50px 50px 50px 40px 50px 50px 50px 50px;
+            grid-template-rows: 130px 50px 50px 50px 50px 50px 50px 50px 50px;
         }
 
         .navCol {
@@ -30,7 +30,7 @@ body, html {
             left: 60px;
             display: grid;
             align-items: center;
-            grid-template-rows: 130px 50px 50px 50px 50px 50px 50px 40px 50px 50px 50px 50px;
+            grid-template-rows: 130px 50px 50px 50px 50px 50px 50px 50px 50px ;
         }
 
             #mainLogo {
@@ -46,6 +46,7 @@ body, html {
             }
 
             .dashIcon {
+                padding-top: 4px;
                 height: 30px;
             }
 
@@ -63,6 +64,26 @@ body, html {
                 font-weight: bold;
                 font-size: 20px;
             }
+
+
+                .submenu {
+                    display: none;
+                    margin-top: -10px;
+                    list-style: none;
+                    font-size: 20px;
+                    padding-left: 0px;
+                }
+
+                    .submenuItem {
+                        margin-top: 10px;
+                        font-weight: 400;
+                    }
+                
+                li:hover {
+                    transition: 0.2s;
+                    color:#0072ce;
+                    cursor:pointer
+                }
 
     .column2 {
         display: grid;
@@ -166,8 +187,8 @@ body, html {
 
         .contentRow {
             display: grid;
-            grid-template-columns: 3fr 1.3fr;    
-            box-shadow: inset 0px 5px 7px -7px rgb(0, 0, 0);
+            grid-template-columns: 3fr 1.2fr; 
+            border-top: 1px solid #d9e2e6;
         }
 
             .projectsCol {
@@ -243,6 +264,22 @@ body, html {
                     grid-template-rows: 1fr 1fr .85fr;   
                 }
 
+                .announcementTitleCont {
+                    display: flex;
+                    align-items: center;
+                }
+
+                    .announceIcon {
+                        display: grid;
+                        justify-content: center;
+                        align-items: center;
+                        height: 19px;
+                        fill:#5D666F;
+                        margin-left: 4px;
+                        margin-right: -2px;
+                    }
+    
+
                     .announcementTitle {
                         font-weight: bold;
                         min-width: 170px;
@@ -297,15 +334,15 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .dashIcon, .dashboardLogo {
-    fill:white
+    fill:#5D666F
 }
 
-li, .videoTextCont, .textExp, .column1, .headerRow, .announcementTitle, .projectTitle, .user, .button {
-    color: white
+li, .videoTextCont, .textExp, .column1, .headline, .headerRow, .announcementTitle, .user, .subTitle, .projectTitle {
+    color: #5D666F
 }
 
 .subUser, .projectText, .announcementText {
-    color:#c7c7c7
+    color: #919499;
 }
 
 
@@ -313,12 +350,8 @@ li, .videoTextCont, .textExp, .column1, .headerRow, .announcementTitle, .project
     background-color: #9b9b9b;
 }
 
-.subTitle, .headline {
-    color: #c7c7c7;
-}
-
 .search {
-    background-color: white;
+    background-color: #E8F0F3;
 }
 
 .button, .cardColumnLeft {
@@ -327,19 +360,21 @@ li, .videoTextCont, .textExp, .column1, .headerRow, .announcementTitle, .project
 
 
 .searchRow, .videoTextCont,.textCont, .adminRow, .card, .announcementsCard, .trendingCard {
-    background-color: #334756;
+    background-color: #FFFFFF;
 }
 
 
 .column1 {
-    background-color: #2C394B;
+    background-color: #FFFFFF;
+    border-right: 1px solid #d9e2e6;
+}
+
+.button {
+    color: #FFFFFF;
 }
 
 .contentRow, .pricelistRow {
-    background-color: #082032;
-}
-
-#JotFormIFrame-230152752746354 {
+    background-color: #E8F0F3;
 }
 
 .headline {
@@ -416,4 +451,12 @@ table {
 
 ul {
     list-style-position: inside;
+}
+
+.grow:hover
+{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: 0.2s;
 }
