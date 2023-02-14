@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Wrapper for the dashboard and navigation bars */
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  
+  /* Styling for the left navigation bar */
+  .navbar-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+  }
+  
+  /* Styling for the top navigation bar */
+  .navbar-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 250px;
+    height: 50px;
+    background-color: white;
+  }
+  
+  /* Styling for the dashboard content */
+  main {
+    flex: 1;
+    padding: 20px;
+  }

@@ -6,18 +6,19 @@ body, html {
   
 .container {
     display: grid;
-    grid-template-columns: 265px 3fr;
+    grid-template-columns: 255px 3fr;
     font-family: "Open Sans", Helvetica, sans-serif;
     height: 100%;
 }
 
     .column1 {
         display: grid;
-        padding-left: 15px;
         grid-template-columns: 57px 3fr;
     }
 
         .logoCol {
+            position: fixed;
+            left: 10px;
             display: grid;
             justify-items: center;
             align-items: center;
@@ -25,13 +26,15 @@ body, html {
         }
 
         .navCol {
+            position: fixed;
+            left: 60px;
             display: grid;
             align-items: center;
             grid-template-rows: 130px 50px 50px 50px 50px 50px 50px 40px 50px 50px 50px 50px;
         }
 
             #mainLogo {
-                position: absolute;
+                position: fixed;
                 top: 25px;
                 left: 25px;
                 width: 200px;
