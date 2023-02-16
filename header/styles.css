@@ -1,14 +1,3 @@
-/* @media all and (max-width: 900px) {
-    .container {
-        display: none;
-    }
-
-    .orderRow, .contentRow, .pricelistRow {
-        background-color: #E8F0F3;
-        margin-top: 20px;
-    }
-} */
-
 body, html {
     height: 100%;
     width: 100%;
@@ -18,7 +7,7 @@ body, html {
 .container {
     display: grid;
     grid-template-columns: 255px 3fr;
-    font-family: "Oxygen", "Open Sans", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     height: 100%;
 }
 
@@ -87,7 +76,7 @@ body, html {
 
                     .submenuItem {
                         margin-top: 10px;
-                        font-weight: 800;
+                        font-weight: 400;
                     }
                 
                 li:hover {     
@@ -98,16 +87,47 @@ body, html {
 
     .column2 {
         display: grid;
-        grid-template-rows: 110px 4fr;
+        grid-template-rows: 160px 4fr;
     }
 
         .headerRow {
             display: grid;
+            grid-template-rows: 60px 100px;
             font-weight: bold;
-            position: fixed;
         }
 
-                .findIcon {
+            .searchRow {
+                display: grid;
+                grid-template-columns: 0fr 4fr 1fr 30px 40px 104px 30px;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                padding-top: 20px;
+                padding-bottom: 10px;
+                height: 30px;
+                gap: 20px;
+                padding-left: 30px;  
+            }
+
+                .search {
+                    border: 1px solid grey;
+                    border-radius: 5px;
+                    height: 20px;
+                    padding: 2px 10px 2px 10px;
+                    outline: 0;
+                }
+                
+                .searchIcon {
+                    height: 25px;
+                    padding-right: 10px;
+                }   
+
+                                
+                .searchIcon2 {
+                    height: 25px;
+                }   
+
+                .avatarSearch1 {
                     height: 40px;
                     display: grid;
                     justify-content: center;
@@ -115,22 +135,35 @@ body, html {
                     align-content: center;
                 }
 
+                .avatarSearch2 {
+                    height: 60px;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                }
 
             .headerColumns {
                 display: grid;
-                grid-template-columns: 0fr 166px 1000fr 1fr 1fr 1fr 0fr;
+                grid-template-columns: 0fr 3fr 2fr 100px 100px 100px 30px;
                 padding-top: 20px;
-                padding-bottom: 20px;
+                padding-bottom: 30px;
                 align-items: center;
-                gap: 15px;
+                gap: 20px;
                 padding-left: 30px;
-                border-bottom: 1px solid #d9e2e6;
             }
             
                 .catPic2 {
                     display: grid;
                     justify-content: right;
                     padding-right: 10px;
+                }
+
+                .hiMorgan {
+                    display: grid;
+                    align-items: center;
+                    min-width: 280px;
+                    gap: 7px;
                 }
 
                     .smolText {
@@ -217,19 +250,17 @@ body, html {
 
             .announceCol {
                 display: grid;
-                grid-template-rows: .37fr 1fr;
+                grid-template-rows: .4fr 1fr;
                 padding-right: 15px;
                 padding-top: 30px;
             }
-
 
                 .announcementsCard {
                     padding: 20px;
                     display: grid;
                     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
                     border-radius: 5px;
-                    grid-template-rows: 1fr 1fr .85fr;
-                    margin-bottom: 20px;
+                    grid-template-rows: 1fr 1fr .85fr;   
                 }
 
                 .announcementTitleCont {
@@ -266,10 +297,6 @@ body, html {
                         margin-top: 10px;
                         margin-bottom: 10px;
                     }
-                    
-                .trending {
-                    margin-bottom: 20px;
-                }    
 
                     .trendingCard {
                         padding: 20px;
@@ -322,11 +349,16 @@ li, .videoTextCont, .textExp, .column1, .headline, .headerRow, .announcementTitl
     background-color: #9b9b9b;
 }
 
+.search {
+    background-color: #E8F0F3;
+}
+
 .button, .cardColumnLeft {
     background: #0072ce;
 }
 
-.headerRow, .searchRow, .videoTextCont,.textCont, .card, .announcementsCard, .trendingCard {
+
+.searchRow, .videoTextCont,.textCont, .headerColumns, .card, .announcementsCard, .trendingCard {
     background-color: #FFFFFF;
 }
 
@@ -336,19 +368,12 @@ li, .videoTextCont, .textExp, .column1, .headline, .headerRow, .announcementTitl
     border-right: 1px solid #d9e2e6;
 }
 
-.column2, .announceCol, .projectsCol {
-    background: #E8F0F3;
-    background-color: #E8F0F3;
-}
-
 .button {
     color: #FFFFFF;
 }
 
-
-.orderRow, .contentRow, .pricelistRow {
+.contentRow, .pricelistRow {
     background-color: #E8F0F3;
-    margin-top: 108px;
 }
 
 .headline {
