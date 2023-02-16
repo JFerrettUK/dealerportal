@@ -161,7 +161,7 @@ body, html {
 
         .contentRow {
             display: grid;
-            grid-template-columns: 3fr 1.2fr; 
+            grid-template-columns: 3fr 0.1fr; 
             border-top: 1px solid #d9e2e6;
         }
 
@@ -236,6 +236,7 @@ body, html {
                 padding-right: 15px;
                 padding-top: 30px;
             }
+            
 
 
                 .announcementsCard {
@@ -372,7 +373,7 @@ li, .videoTextCont, .textExp, .column1, .headline, .headerRow, .user, .subTitle,
 }
 
 
-.orderRow, .contentRow, .mainRow {
+.orderRow, .contentRow, .mainRow, .pricelistRow {
     background-color: #E8F0F3;
     margin-top: 108px;
 }
