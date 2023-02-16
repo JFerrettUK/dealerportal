@@ -28,6 +28,7 @@ body, html {
     }
 
         .logoCol {
+            padding-top: 2px;
             position: fixed;
             left: 10px;
             display: grid;
@@ -57,7 +58,6 @@ body, html {
             }
 
             .dashIcon {
-                padding-top: 4px;
                 height: 30px;
             }
 
@@ -115,10 +115,18 @@ body, html {
                     align-content: center;
                 }
 
+                .socialIcon {
+                    height: 25px;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                }
+
 
             .headerColumns {
                 display: grid;
-                grid-template-columns: 0fr 166px 1000fr 1fr 1fr 1fr 0fr;
+                grid-template-columns: 0fr 166px 1000fr 1fr 1fr 1fr 1fr 1fr 1fr 0fr;
                 padding-top: 20px;
                 padding-bottom: 20px;
                 align-items: center;
@@ -192,6 +200,8 @@ body, html {
                     .cardColumnRight {
                         padding: 20px;
                         display: grid;
+                        grid-template-rows: 30px 20px 2fr;
+                        min-width: 200px;
                     }
 
                         .projectText {
@@ -210,14 +220,19 @@ body, html {
                             gap: 20px;
                         }
 
-                            .projIcon {
-                                
-                                height: 22px;
-                            }
+                        #trainingIcon {
+                            height: 27px;
+                        }
+
+                        #trainingIcon2 {
+                            fill:#0072ce;
+                            height: 27px;
+                        }
+
 
             .announceCol {
                 display: grid;
-                grid-template-rows: .37fr 1fr;
+                grid-template-rows: 1fr;
                 padding-right: 15px;
                 padding-top: 30px;
             }
@@ -228,21 +243,27 @@ body, html {
                     display: grid;
                     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
                     border-radius: 5px;
-                    grid-template-rows: 1fr 1fr .85fr;
+                    max-width: 250px;
+                    grid-template-rows: 1fr 1fr 1fr;
                     margin-bottom: 20px;
                 }
 
                 .announcementTitleCont {
                     display: flex;
                     align-items: center;
+                    margin-bottom: -5px;
                 }
+
+                    .announcementImg {
+                        width: 250px;
+                    }
 
                     .announceIcon {
                         display: grid;
                         justify-content: center;
                         align-items: center;
                         height: 19px;
-                        fill:#5D666F;
+                        fill:#0072ce;
                         margin-left: 4px;
                         margin-right: -2px;
                     }
@@ -309,12 +330,17 @@ a:link, a:visited, a:hover, a:active {
     fill:#5D666F
 }
 
-li, .videoTextCont, .textExp, .column1, .headline, .headerRow, .announcementTitle, .user, .subTitle, .projectTitle {
+
+li, .videoTextCont, .textExp, .column1, .headline, .headerRow, .user, .subTitle, .projectTitle {
     color: #5D666F
 }
 
 .subUser, .projectText, .announcementText {
     color: #919499;
+}
+
+.announcementTitle {
+    color: #0072ce
 }
 
 
@@ -346,9 +372,14 @@ li, .videoTextCont, .textExp, .column1, .headline, .headerRow, .announcementTitl
 }
 
 
-.orderRow, .contentRow, .pricelistRow {
+.orderRow, .contentRow, .mainRow {
     background-color: #E8F0F3;
     margin-top: 108px;
+}
+
+.orderRow {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .headline {
