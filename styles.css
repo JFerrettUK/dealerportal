@@ -375,7 +375,7 @@ li, .videoTextCont, .textExp, .column1, .headline, .headerRow, .user, .subTitle,
 
 .orderRow, .contentRow, .mainRow, .pricelistRow {
     background-color: #E8F0F3;
-    margin-top: 108px;
+    margin-top: 128px;
 }
 
 .orderRow {
@@ -420,13 +420,18 @@ linebreakCont {
     min-width: 80px;
     padding: 20px;
     margin: 20px;
-    border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 70px;
     justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;    
+
 }
 
 .videoCont {
     display: grid;
     justify-content: center;
+
 }
 
 .videoText {
@@ -465,4 +470,9 @@ ul {
         -ms-transform: scale(1.1);
         transform: scale(1.1);
         transition: 0.2s;
+}
+
+table, th, td {
+    border-radius: 5px;
+
 }
