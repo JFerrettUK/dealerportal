@@ -162,13 +162,11 @@ body, html {
         .contentRow {
             display: grid;
             grid-template-columns: 3fr 0.1fr; 
-            border-top: 1px solid #d9e2e6;
         }
 
             .projectsCol {
                 padding-left: 15px;
                 padding-right: 25px;
-                padding-top: 30px;
             }
 
 
