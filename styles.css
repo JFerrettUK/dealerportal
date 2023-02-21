@@ -235,15 +235,13 @@ body, html {
             }
             
 
-
                 .announcementsCard {
                     padding: 20px;
                     display: grid;
                     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
                     border-radius: 5px;
                     max-width: 250px;
-                    grid-template-rows: 1fr 1fr 1fr;
-                    margin-bottom: 20px;
+                    grid-template-rows: 1fr 0.8fr 1fr;
                 }
 
                 .announcementTitleCont {
@@ -472,4 +470,12 @@ ul {
 table, th, td {
     border-radius: 5px;
 
+}
+
+#warrantyIcon {
+height: 27px;
+}
+
+#warrantyIconNav {
+height: 28px;
 }
