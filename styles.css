@@ -1,5 +1,5 @@
 /* @media all and (max-width: 900px) {
-    .container {
+    .portal_container {
         display: none;
     }
 
@@ -14,22 +14,28 @@ body, html {
     width: 100%;
     margin: 0;
   }
+
+  #contactaIcon {
+    max-width: initial;
+  }
   
-.container {
+.portal_container {
     display: grid;
     grid-template-columns: 255px 3fr;
     font-family: "Oxygen", "Open Sans", Helvetica, sans-serif;
     height: 100%;
+    border-top: 1px solid #d9e2e6;
+    border-bottom: 1px solid #d9e2e6;
 }
 
-    .column1 {
+    .portal_column1 {
         display: grid;
         grid-template-columns: 57px 3fr;
     }
 
         .logoCol {
             padding-top: 2px;
-            position: fixed;
+            /* position: fixed; */
             left: 10px;
             display: grid;
             justify-items: center;
@@ -38,7 +44,7 @@ body, html {
         }
 
         .navCol {
-            position: fixed;
+            /* position: fixed; */
             left: 60px;
             display: grid;
             align-items: center;
@@ -46,7 +52,7 @@ body, html {
         }
 
             #mainLogo {
-                position: fixed;
+                /* position: fixed; */
                 top: 25px;
                 left: 25px;
                 width: 200px;
@@ -96,7 +102,7 @@ body, html {
                     cursor:pointer
                 }
 
-    .column2 {
+    .portal_column2 {
         display: grid;
         grid-template-rows: 110px 4fr;
     }
@@ -104,7 +110,7 @@ body, html {
         .headerRow {
             display: grid;
             font-weight: bold;
-            position: fixed;
+            /* position: fixed; */
         }
 
                 .findIcon {
@@ -327,7 +333,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 
-li, .videoTextCont, .textExp, .column1, .headline, .headerRow, .user, .subTitle, .projectTitle {
+li, .videoTextCont, .textExp, .portal_column1, .headline, .headerRow, .user, .subTitle, .projectTitle {
     color: #5D666F
 }
 
@@ -353,12 +359,12 @@ li, .videoTextCont, .textExp, .column1, .headline, .headerRow, .user, .subTitle,
 }
 
 
-.column1 {
+.portal_column1 {
     background-color: #FFFFFF;
     border-right: 1px solid #d9e2e6;
 }
 
-.column2, .announceCol, .projectsCol {
+.portal_column2, .announceCol, .projectsCol {
     background: #E8F0F3;
     background-color: #E8F0F3;
 }
