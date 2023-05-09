@@ -40,7 +40,7 @@ body, html {
             display: grid;
             justify-items: center;
             align-items: center;
-            grid-template-rows: 110px 50px 50px 50px 50px 50px 50px 50px 50px;
+            grid-template-rows: 10px 50px 50px 50px 50px 50px 50px 50px 50px;
         }
 
         .navCol {
@@ -48,7 +48,7 @@ body, html {
             left: 60px;
             display: grid;
             align-items: center;
-            grid-template-rows: 110px 50px 50px 50px 50px 50px 50px 50px 50px ;
+            grid-template-rows: 8px 50px 50px 50px 50px 50px 50px 50px 50px ;
         }
 
             #mainLogo {
