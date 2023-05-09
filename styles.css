@@ -40,7 +40,7 @@ body, html {
             display: grid;
             justify-items: center;
             align-items: center;
-            grid-template-rows: 130px 50px 50px 50px 50px 50px 50px 50px 50px;
+            grid-template-rows: 110px 50px 50px 50px 50px 50px 50px 50px 50px;
         }
 
         .navCol {
@@ -48,10 +48,11 @@ body, html {
             left: 60px;
             display: grid;
             align-items: center;
-            grid-template-rows: 130px 50px 50px 50px 50px 50px 50px 50px 50px ;
+            grid-template-rows: 110px 50px 50px 50px 50px 50px 50px 50px 50px ;
         }
 
             #mainLogo {
+                display: none;
                 /* position: fixed; */
                 top: 25px;
                 left: 25px;
@@ -71,7 +72,7 @@ body, html {
                 height: 40px;
             }
 
-            h1 {
+            .portal_container h1 {
                 padding-top: 20px;
                 font-size: 28px;
             }
@@ -323,16 +324,35 @@ body, html {
                             font-size: 14px;
                         }
 
-a:link, a:visited, a:hover, a:active { 
-    text-decoration: none;
+.portal_container a:link, 
+.portal_container a:visited, 
+.portal_container a:hover, 
+.portal_container a:active { 
+    text-decoration: none; 
+    color: inherit;
+}
+
+.navCol a:hover,
+.navCol a:active,
+.navCol a:focus {
+    color: #0072ce;
 }
 
 .dashIcon, .dashboardLogo {
     fill:#5D666F
 }
+.dashIcon:hover,
+.dashIcon:focus,
+.dashIcon:active {
+    fill:#0072ce
+}
+.logoCol svg:hover,
+.logoCol svg:focus,
+.logoCol svg:active {
+    color:#0072ce;
+}
 
-
-li, .videoTextCont, .textExp, .portal_column1, .headline, .headerRow, .user, .subTitle, .projectTitle {
+.portal_container li, .videoTextCont, .textExp, .portal_column1, .headline, .headerRow, .user, .subTitle, .projectTitle {
     color: #5D666F
 }
 
@@ -375,7 +395,7 @@ li, .videoTextCont, .textExp, .portal_column1, .headline, .headerRow, .user, .su
 
 .orderRow, .contentRow, .mainRow, .pricelistRow {
     background-color: #E8F0F3;
-    margin-top: 128px;
+    margin-top: 8px;
 }
 
 .orderRow {
@@ -451,16 +471,18 @@ linebreakCont {
     padding-right: 30px;
 }
 
-table, th, td {
+.portal_container table, 
+.portal_container th, 
+.portal_container td {
     border: 1px solid;
     padding: 10px;
 }
   
-table {
+.portal_container table {
     width: 100%;
 }
 
-ul {
+.portal_container ul {
     list-style-position: inside;
 }
 
@@ -472,7 +494,9 @@ ul {
         transition: 0.2s;
 }
 
-table, th, td {
+.portal_container table, 
+.portal_container th, 
+.portal_container td {
     border-radius: 5px;
 
 }
